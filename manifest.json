@@ -1,0 +1,21 @@
+{
+    "name": "JustAFade",
+    "version": "1.0",
+    "description": "The internet is bad for you, stop doing it so much",
+    "manifest_version": 2,
+    "permissions": [
+        "activeTab",
+            "storage"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://twitter.com/*",
+                "https://facebook.com/*"
+            ],
+            "js": [
+                "contentScript.js"
+            ]
+        }
+    ]
+}
